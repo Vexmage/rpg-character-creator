@@ -4,7 +4,7 @@ import Stepper from "./components/Stepper";
 import SummaryPanel from "./components/SummaryPanel";
 import Roll20Preview from "./components/Roll20Preview";
 import StepConcept from "./components/StepConcept";
-
+import StepIdentity from "./components/StepIdentity";
 import { loadSlot, saveSlot } from "./lib/storage";
 import { buildRoll20Text } from "./lib/exportRoll20";
 
@@ -55,7 +55,7 @@ export default function App() {
 
   const steps = [
     { title: "Concept", component: <StepConcept ch={ch} setCh={setCh} /> },
-    { title: "Race & Faction", component: <div>TODO: StepIdentity</div> },
+    { title: "Race & Faction", component: <StepIdentity ch={ch} setCh={setCh} /> },
     { title: "Class", component: <div>TODO: StepClass</div> },
     { title: "Traits", component: <div>TODO: StepTraits</div> },
     { title: "Gear", component: <div>TODO: StepGear</div> },
